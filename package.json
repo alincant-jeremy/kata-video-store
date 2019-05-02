@@ -1,0 +1,16 @@
+{
+  "name": "katavideostore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "movies.js",
+  "scripts": {
+    "test": "jest",
+    "cover": "jest --coverage",
+    "watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
