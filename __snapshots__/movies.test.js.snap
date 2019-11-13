@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test dual NewRelease statement 1`] = `
+"Rental Record for martin
+	The Cell	9
+	The Tigger Movie	9
+Amount owed is 18
+You earned 4 frequent renter points
+"
+`;
+
+exports[`test multiple regular statement 1`] = `
+"Rental Record for martin
+	Plan 9 from Outer Space	2
+	8 1/2	2
+	Eraserhead	3.5
+Amount owed is 7.5
+You earned 3 frequent renter points
+"
+`;
+
+exports[`test single NewRelease statement 1`] = `
+"Rental Record for martin
+	The Cell	9
+Amount owed is 9
+You earned 2 frequent renter points
+"
+`;
+
+exports[`test single children statement 1`] = `
+"Rental Record for martin
+	The Tigger Movie	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points
+"
+`;

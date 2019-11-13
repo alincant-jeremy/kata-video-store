@@ -12,7 +12,7 @@ let newReleaseMovies = {
 }
 
 test('test single NewRelease statement', () => {
-    expect(statement(newReleaseCustomer, newReleaseMovies)).toBe('Rental Record for martin\n\tThe Cell\t9\nAmount owed is 9\nYou earned 2 frequent renter points\n');
+    expect(statement(newReleaseCustomer, newReleaseMovies)).toMatchSnapshot();
 });
 
 let newReleaseCustomer2 = {
@@ -29,7 +29,7 @@ let newReleaseMovies2 = {
 }
 
 test('test dual NewRelease statement', () => {
-    expect(statement(newReleaseCustomer2, newReleaseMovies2)).toBe('Rental Record for martin\n\tThe Cell\t9\n\tThe Tigger Movie\t9\nAmount owed is 18\nYou earned 4 frequent renter points\n');
+    expect(statement(newReleaseCustomer2, newReleaseMovies2)).toMatchSnapshot();
 });
 
 let newChildrenCustomer = {
@@ -44,7 +44,7 @@ let newChildrenMovies = {
 }
 
 test('test single children statement', () => {
-    expect(statement(newChildrenCustomer, newChildrenMovies)).toBe('Rental Record for martin\n\tThe Tigger Movie\t1.5\nAmount owed is 1.5\nYou earned 1 frequent renter points\n');
+    expect(statement(newChildrenCustomer, newChildrenMovies)).toMatchSnapshot();
 });
 
 let regularCustomer = {
@@ -63,5 +63,5 @@ let regularMovies = {
 }
 
 test('test multiple regular statement', () => {
-    expect(statement(regularCustomer, regularMovies)).toBe('Rental Record for martin\n\tPlan 9 from Outer Space\t2\n\t8 1/2\t2\n\tEraserhead\t3.5\nAmount owed is 7.5\nYou earned 3 frequent renter points\n');
+    expect(statement(regularCustomer, regularMovies)).toMatchSnapshot();
 });
